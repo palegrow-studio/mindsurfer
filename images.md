@@ -7,7 +7,6 @@ title: О сайте
   role="main"
   data-width="100%"
   data-height="100%"
-  data-fit="cover"
 	data-nav="none"
 >
   {% for image in site.static_files %}

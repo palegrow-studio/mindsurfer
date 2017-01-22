@@ -13,11 +13,10 @@ title: О сайте
   data-loop="true"
   data-keyboard="true"
   data-click="true"
-  data-swipe="true"
->
+  data-swipe="true">
   {% for image in site.static_files %}
     {% if image.path contains 'images' %}
-      <img src="{{image.path}}" alt="{{image.name}}">
+      <a href="{{image.path}}" title="{{image.name}}"></a>
     {% endif %}
   {% endfor %}
 </main>

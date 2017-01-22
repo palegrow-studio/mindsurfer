@@ -2,8 +2,8 @@
 title: О сайте
 ---
 
-Попори — это коллективный блог, созданный для публикации новостей, переводов, аналитических статей, мыслей, связанных с игрой TERA: The Exiled Realm of Arborea.
-
-{% for file in site.static_files %}
-  <p>file.path</p>
+{% for image in site.static_files %}
+{% if image.path contains 'images' %}
+  <p>{{image.path}} - {{image.modified_time}}</p>
+{% endif %}
 {% endfor %}
